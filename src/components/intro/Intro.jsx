@@ -29,7 +29,9 @@ export default function Intro() {
             Aspiring <span ref={textRef}></span>
           </h3>
         </div>
-        <a href="#portfolio">
+
+        <a href="#about">
+          <span>A little bit of myself</span>
           <img src="assets/icons8-divisa-para-baixo-90.png" alt="down arrow" />
         </a>
       </div>

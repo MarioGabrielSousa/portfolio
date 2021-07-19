@@ -9,6 +9,7 @@
   top: 0;
   z-index: 3;
   transition: all 1s ease;
+  overflow-y: hidden;
 
   .wrapper {
     padding: 10px 30px;
@@ -54,6 +55,7 @@
         flex-direction: column;
         justify-content: space-between;
         cursor: pointer;
+        overflow-y: hidden;
 
         span {
           width: 100%;
