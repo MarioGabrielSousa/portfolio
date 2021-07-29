@@ -4,16 +4,43 @@ export default function Contact() {
   return (
     <div className="contact" id="contact">
       <div className="left">
-        <img src="assets/about-sub-pic-1.png" alt="" />
+        <img src="assets/letstalk.jpg" alt="" />
       </div>
       <div className="right">
-        <h2>Reach out!</h2>
-        <form>
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="E-mail" />
-          <textarea placeholder="Don't be shy..."></textarea>
-          <button type="submit">Send</button>
-        </form>
+        <div className="container">
+          <div className="contact-items">
+            <img width={120} id="image" src="assets/icons8-github.gif" alt="" />
+            <h2>
+              <a target="_blank" href="https://github.com/MarioGabrielSousa">
+                GitHub
+              </a>
+            </h2>
+          </div>
+          <div className="contact-items">
+            <img
+              width={120}
+              id="image"
+              src="assets/icons8-linkedin.gif"
+              alt=""
+            />
+            <h2>
+              <a target="_blank" href="https://www.linkedin.com/in/mariogabrielsousa/">
+                LinkedIn
+              </a>
+            </h2>
+          </div>
+          <div className="contact-items">
+            <img
+              width={120}
+              id="image"
+              src="assets/image_processing20201103-24799-19vf3o0.gif"
+              alt=""
+            />
+            <h2>
+              <a href="mailto:vegetalizado@gmail.com">Gmail</a>
+            </h2>
+          </div>
+        </div>
       </div>
     </div>
   );

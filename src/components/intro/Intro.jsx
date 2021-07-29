@@ -10,7 +10,7 @@ export default function Intro() {
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ["Web Developer"],
+      strings: ["web developer"],
     });
   }, []);
 
@@ -24,14 +24,14 @@ export default function Intro() {
       <div className="right">
         <div className="wrapper">
           <h2>Olá! I'm</h2>
-          <h1>Mário</h1>
+          <h1>Mário,</h1>
           <h3>
-            Aspiring <span ref={textRef}></span>
+           an aspiring <span ref={textRef}></span>
           </h3>
         </div>
 
         <a href="#about">
-          <span>A little bit of myself</span>
+          <span><strong>A little bit of myself</strong></span>
           <img src="assets/icons8-divisa-para-baixo-90.png" alt="down arrow" />
         </a>
       </div>

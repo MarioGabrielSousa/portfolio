@@ -8,7 +8,30 @@
   justify-content: space-evenly;
 
   h1 {
-    font-size: 50px;
+    font-size: 100px;
+    color: #e91e63;
+
+    @media screen and (max-width: 500px) {
+      font-size: 20vw;
+    }
+
+    .ityped-cursor {
+      animation: blink 1s infinite;
+    }
+
+    .finished + .ityped-cursor {
+      opacity: 0;
+      animation: none;
+    }
+
+    @keyframes blink {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
   }
 
   ul {
@@ -41,22 +64,26 @@
     .item {
       width: 220px;
       height: 150px;
-      margin: 0 50px;
       border-radius: 20px;
       border: 1px solid rgb(224, 219, 219);
-      margin: 10px 20px;
+      margin: 20px;
       display: flex;
       align-items: center;
       justify-content: center;
       color: white;
       position: relative;
       transition: all 0.5 ease;
-      cursor: pointer;
 
       h3 {
         position: absolute;
         font-size: 20px;
         margin: 3px;
+        cursor: pointer;
+
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
       }
 
       img {
@@ -72,6 +99,29 @@
           opacity: 0.2;
           z-index: 0;
         }
+      }
+    }
+  }
+
+  a {
+    font-size: 20px;
+    bottom: 10px;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+
+    img {
+      width: 60px;
+      animation: arrowBlink 2s infinite;
+    }
+
+    @keyframes arrowBlink {
+      100% {
+        opacity: 0;
       }
     }
   }

@@ -1,3 +1,79 @@
+@import "../../global.scss";
+
 .about {
-  background-color: lightgreen;
+  background-color: $mainBg;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    font-size: 20px;
+    bottom: 10px;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+
+    img {
+      width: 60px;
+      animation: arrowBlink 2s infinite;
+    }
+
+    @keyframes arrowBlink {
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+
+  strong {
+    color: inherit;
+  }
+}
+
+.about_container {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 5vh;
+  padding: 0 40px;
+  font-size: 21px;
+
+  p {
+    margin-bottom: 25px;
+
+    a {
+      text-decoration: none;
+      color: #e91e63;
+    }
+  }
+}
+
+.skills {
+  width: 100%;
+  margin: 40px;
+  font-weight: 600;
+}
+
+.skills_about {
+  font-size: 20px;
+  margin-bottom: 50px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill_icon {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 20px 20px;
 }
