@@ -1,6 +1,5 @@
 import "./portfolio.scss";
 
-
 export default function Portfolio() {
   return (
     <div className="portfolio" id="portfolio">
@@ -17,7 +16,9 @@ export default function Portfolio() {
         <div className="item">
           <img src="assets/bestteenmovies-1612822987.jpg" alt="5stars" />
           <h3>
-            <a href="https://fivestars-network.herokuapp.com/">5 Stars</a>
+            <a href="https://fivestars-network.herokuapp.com/">
+              5 Stars – Rate and Share Media Network
+            </a>
           </h3>
         </div>
         <div className="item">
@@ -26,7 +27,9 @@ export default function Portfolio() {
             alt="dailydose"
           />
           <h3>
-            <a href="https://fit-oh.netlify.app/">Daily Dose</a>
+            <a href="https://fit-oh.netlify.app/">
+              Daily Dose – Digital notebook for workout routines
+            </a>
           </h3>
         </div>
       </div>
