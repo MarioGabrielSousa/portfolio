@@ -72,7 +72,8 @@
       justify-content: center;
       color: white;
       position: relative;
-      transition: all 0.5 ease;
+      overflow: hidden;
+      transition: all 0.5s ease;
 
       h3 {
         position: absolute;
