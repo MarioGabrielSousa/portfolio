@@ -17,6 +17,8 @@ function App() {
   return (
     <div className="app">
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      {/* isto é para surtir efeito nos outros componentes,
+      ou seja, para os outros componentes terem acesso ao estado e conseguirem mudar o estado do App */}
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections" onWheel={handleScrollSections}>
         <Intro />

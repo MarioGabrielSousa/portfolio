@@ -12,6 +12,7 @@
       width: 600px;
       height: 600px;
       background-color: #e91e63;
+      transition: background 0.3s ease;
       border-radius: 50%;
       display: flex;
       align-items: flex-end;
@@ -21,6 +22,7 @@
 
       img {
         height: 90%;
+        user-select: none;
       }
     }
   }

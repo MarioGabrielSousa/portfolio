@@ -26,6 +26,9 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
         </div>
         <div className="right">
           <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+            {/* quando clico aqui, tenho esta arrow function a correr. Se fosse:
+            onClick={setMenuOpen(!menuOpen)}, no render, ele ia abrir o menu
+            sozinho e não conseguia correr nada, porque o resultado do que está dentro do onclick é undefined */}
             <span className="line1"></span>
             <span className="line2"></span>
             <span className="line3"></span>
