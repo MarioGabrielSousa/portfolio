@@ -20,9 +20,8 @@ export default function Intro() {
       backDelay: 1500,
       backSpeed: 60,
       strings: ["web developer"],
-      color: PHOTO_COLOURS[colorIndex % PHOTO_COLOURS.length],
     });
-  });
+  }, []);
 
   return (
     <div className="intro" id="intro">
