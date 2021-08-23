@@ -3,14 +3,11 @@ import { init } from "ityped";
 import { useState, useEffect, useRef } from "react";
 
 const PHOTO_COLOURS = [
-  "#0000ff",
-  "linear-gradient(120deg, #fccb90 0%, #d57eeb 100%)",
-  "#00ff00",
-  "#ff0000",
-  "linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%)",
-  "#ffff00",
-  "#00ffff",
-  "#ff00ff",
+  "linear-gradient(90deg, rgba(233,30,96,1) 0%, rgba(245,200,255,1) 100%)",
+  "linear-gradient(120deg, rgba(99,125,254,1) 0%, rgba(219,200,255,1) 100%)",
+  "linear-gradient(90deg, rgba(126,219,96,1) 0%, rgba(252,255,150,1) 100%",
+  "linear-gradient(120deg, rgba(255,0,0,1) 0%, rgba(252,105,89,1) 50%, rgba(250,192,192,1) 100%)",
+  "linear-gradient(90deg, rgba(203,213,30,1) 0%, rgba(248,252,89,1) 50%, rgba(250,192,192,1) 100%)",
 ];
 
 export default function Intro() {
@@ -25,7 +22,7 @@ export default function Intro() {
       strings: ["web developer"],
       color: PHOTO_COLOURS[colorIndex % PHOTO_COLOURS.length],
     });
-  }, []);
+  });
 
   return (
     <div className="intro" id="intro">
