@@ -8,33 +8,34 @@
 
   .big-img {
     width: 30%;
+    min-width: 250px;
     max-height: 30%;
     margin-top: 15px;
-    @media screen and (max-width: 550px) {
-      .contact img {
-        width: 100%;
-      }
-    }
   }
 
   .container {
-    width: 30vw;
+    width: 50vw;
     height: 50%;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    overflow: visible;
 
-    a {
-      display: flex;
-      align-items: center;
-    }
-
-    @media screen and (max-width: 850px) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    @media screen and (max-width: 550px) {
       padding: 0 30px;
-      width: 70%;
+      width: 100%;
+    }
+  }
+
+  .contact-link {
+    width: 30%;
+    max-width: 100px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-10px);
     }
   }
 }

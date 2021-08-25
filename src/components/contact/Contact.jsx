@@ -5,23 +5,30 @@ export default function Contact() {
     <div className="contact" id="contact">
       <img className="big-img" src="assets/letstalk.jpg" alt="let's talk!" />
       <div className="container">
-        <a rel="noreferrer"
-              target="_blank"
-              href="https://www.linkedin.com/in/mariogabrielsousa/"
-            >
-          <img width={120} id="image" src="assets/icons8-linkedin.gif" alt="" />
-          </a>
-          <a rel="noreferrer" href="mailto:vegetalizado@gmail.com">
-          <img
-            width={120}
-            id="image"
-            src="assets/image_processing20201103-24799-19vf3o0.gif"
-            alt=""
-          /></a>
-           <a rel="noreferrer" target="_blank" href="https://github.com/MarioGabrielSousa">
-          <img width={120} id="image" src="assets/icons8-github.gif" alt="" /></a>
-
-    </div>
+        <a
+          className="contact-link"
+          rel="noreferrer"
+          target="_blank"
+          href="https://www.linkedin.com/in/mariogabrielsousa/"
+        >
+          <img src="assets/linkedin.png" alt="linkedin logo" />
+        </a>
+        <a
+          className="contact-link"
+          rel="noreferrer"
+          href="mailto:vegetalizado@gmail.com"
+        >
+          <img src="assets/Gmail_2020.png" alt="gmail logo" />
+        </a>
+        <a
+          className="contact-link"
+          rel="noreferrer"
+          target="_blank"
+          href="https://github.com/MarioGabrielSousa"
+        >
+          <img src="assets/github.png" alt="github logo" />
+        </a>
+      </div>
     </div>
   );
 }
