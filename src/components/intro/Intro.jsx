@@ -40,9 +40,11 @@ export default function Intro() {
         <div className="wrapper">
           <h2>Olá! I'm</h2>
           <h1>Mário,</h1>
-          <h3>
-            an aspiring <span ref={textRef}></span>
-          </h3>
+          <span className="moving-text">
+            <h3>
+              an aspiring <span ref={textRef}></span>
+            </h3>
+          </span>
         </div>
 
         <a href="#about">
